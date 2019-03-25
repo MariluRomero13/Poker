@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".MainActivity">
+    <TextView
+        android:text="Total"
+        android:id="@+id/txnumero"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_centerVertical="true"
+        android:id="@+id/imagen"
+        android:src="@drawable/portada"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="200dp" />
+
+    <RelativeLayout
+        android:id="@+id/rlimagenes"
+        android:layout_below="@id/imagen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imguno"
+            android:src="@drawable/fondo_carta"
+            android:layout_width="90dp"
+            android:onClick="onClick"
+            android:layout_height="90dp" />
+
+        <ImageView
+            android:id="@+id/imgdos"
+            android:layout_toRightOf="@id/imguno"
+            android:src="@drawable/fondo_carta"
+            android:layout_width="90dp"
+            android:onClick="onClick"
+            android:layout_height="90dp" />
+
+        <ImageView
+            android:layout_toRightOf="@id/imgdos"
+            android:id="@+id/imgtres"
+            android:src="@drawable/fondo_carta"
+            android:layout_width="90dp"
+            android:onClick="onClick"
+            android:layout_height="90dp" />
+
+        <ImageView
+            android:id="@+id/imgcuatro"
+            android:layout_toRightOf="@id/imgtres"
+            android:src="@drawable/fondo_carta"
+            android:layout_width="90dp"
+            android:onClick="onClick"
+            android:layout_height="90dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="90dp"
+        android:layout_below="@id/rlimagenes"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnenviar"
+            android:text="Enviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_toRightOf="@id/btnenviar"
+            android:id="@+id/btnreiniciar"
+            android:text="Reiniciar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+   <!-- <Button
+        android:id="@+id/btnsolicitar"
+        android:text="Solicitar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_below="@id/btnsolicitar"
+        android:id="@+id/btnenviar"
+        android:text="Enviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_below="@id/btnenviar"
+        android:id="@+id/btnreiniciar"
+        android:text="Reiniciar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:text="Total"
+        android:layout_below="@id/btnreiniciar"
+        android:id="@+id/txnumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />-->
+
+
+
+</RelativeLayout>
